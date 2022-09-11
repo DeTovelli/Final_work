@@ -116,7 +116,9 @@ h3,
 
 .main-link,
 .block-tags-link,
-.block-categories-link {
+.block-categories-link,
+.blogpost-title-link,
+.recent-post-title-link{
   text-decoration: none;
   text-transform: uppercase;
   font-family: opensans, Arial, sans-serif;
@@ -127,7 +129,9 @@ h3,
 
 .main-link:hover,
 .block-tags-link:hover,
-.block-categories-link:hover {
+.block-categories-link:hover,
+.blogpost-title-link:hover,
+.recent-post-title-link:hover {
   color: rgb(255, 204, 153);
 }
 
