@@ -27,19 +27,15 @@
           </ul>
         </nav>
       </div>
-      <div class="page-title-wrapper">
-        <h1 class="page-title">Блог о творчестве, спорте и образе жизни</h1>
-      </div>
+      <h1 class="page-title">Блог о творчестве, спорте и образе жизни </h1>
     </div>
   </header>
 
-  <div class="wrapper columns">
-    <main class="column-1">
+  <div class="columns">
+    <main class="column-post-list">
       <!--1-->
       <article class="blogpost">
-        <figure class="blogpost-image">
-          <a href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Man at the beach"></a>
-        </figure>
+        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Man at the beach">
         <div class="blogpost-content">
           <ul class="blogpost-categories">
             <li><a href="#">travel</a></li>
@@ -58,9 +54,7 @@
 
       <!--2-->
       <article class="blogpost">
-        <figure class="blogpost-image">
-          <a href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="A girl making yoga"></a>
-        </figure>
+        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="A girl making yoga">
 
         <div class="blogpost-content">
           <ul class="blogpost-categories">
@@ -80,9 +74,7 @@
 
       <!--3-->
       <article class="blogpost">
-        <figure class="blogpost-image">
-          <a href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="A man"></a>
-        </figure>
+        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="A man">
 
         <div class="blogpost-content">
           <ul class="blogpost-categories">
@@ -102,9 +94,7 @@
 
       <!--4-->
       <article class="blogpost">
-        <figure class="blogpost-image">
-          <a href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="A table with food on it"></a>
-        </figure>
+        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="A table with food on it">
 
         <div class="blogpost-content">
           <ul class="blogpost-categories">
@@ -124,9 +114,7 @@
 
       <!--5-->
       <article class="blogpost">
-        <figure class="blogpost-image">
-          <a href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="A pillowe"></a>
-        </figure>
+        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="A pillowe">
 
         <div class="blogpost-content">
           <ul class="blogpost-categories">
@@ -147,9 +135,7 @@
 
       <!--6-->
       <article class="blogpost">
-        <figure class="blogpost-image">
-          <a href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="A mountine"></a>
-        </figure>
+        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="A mountine">
 
         <div class="blogpost-content">
           <ul class="blogpost-categories">
@@ -169,9 +155,7 @@
 
       <!--7-->
       <article class="blogpost">
-        <figure class="blogpost-image">
-          <a href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="A table with food on it"></a>
-        </figure>
+        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="A table with food on it">
 
         <div class="blogpost-content">
           <ul class="blogpost-categories">
@@ -189,8 +173,8 @@
         </div>
       </article>
     </main>
-    <aside class="column-2">
-      <div class="block">
+    <aside class="column-side-bar">
+      <section class="block">
         <h2 class="block-title">Новые посты</h2>
         <article class="recent-post">
           <a class="recent-post-image" href="#"><img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="Man at the beach"></a>
@@ -231,47 +215,59 @@
             <h3 class="recent-post-title"><a class="recent-post-title-link" href="#">Лучшие прически для распущенных волос</a></h3>
           </div>
         </article>
-      </div>
+      </section>
 
-      <div class="block">
+      <section class="block">
         <form class="search-form" method="get" action="/">
-          <input class="search-form-text input" type="text" placeholder="Найти..." name="search-text"><button class="search-form-button" type="submit"><span class="visually-hidden">Search</span></button>
+          <label class="search">
+            <span class="visually-hidden">Поисковый запрос</span>
+            <input class="search-form-text input" type="text" placeholder="Найти..." name="search-text" required>
+          </label>
+          <button class="search-form-button" type="submit">
+            <span class="visually-hidden">Найти</span>
+          </button>
         </form>
-      </div>
+      </section>
 
-      <div class="block">
-        <h2 class="block-title">Рассылка</h2>
-        <form class="subscribe-form" method="post" action="/">
-          <input class="subscribe-form-text input" type="email" placeholder="Ваш email-адрес" name="subscribe-email">
-          <button class="subscribe-form-button" type="submit">Подписаться</button>
-        </form>
-      </div>
+      <section class="side-bar-mailing">
+        <section class="block">
+          <h2 class="block-title">Рассылка</h2>
+          <form class="subscribe-form" method="post" action="/">
+            <input class="subscribe-form-text input" type="email" placeholder="Ваш email-адрес" name="subscribe-email">
+            <button class="subscribe-form-button" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </section>
 
-      <div class="block">
-        <h2 class="block-title">Теги</h2>
-        <ul class="block-tags-list">
-          <li><a class="block-tags-link" href="#">Fashion</a></li>
-          <li><a class="block-tags-link" href="#">Music</a></li>
-          <li><a class="block-tags-link" href="#">Lifestyle</a></li>
-          <li><a class="block-tags-link" href="#">Art</a></li>
-          <li><a class="block-tags-link" href="#">Interior</a></li>
-          <li><a class="block-tags-link" href="#">Travel</a></li>
-          <li><a class="block-tags-link" href="#">Food</a></li>
-          <li><a class="block-tags-link" href="#">Health</a></li>
-        </ul>
-      </div>
+      <section class="side-bar-tegs">
+        <section class="block">
+          <h2 class="block-title">Теги</h2>
+          <ul class="block-tags-list">
+            <li><a class="block-tags-link" href="#">Fashion</a></li>
+            <li><a class="block-tags-link" href="#">Music</a></li>
+            <li><a class="block-tags-link" href="#">Lifestyle</a></li>
+            <li><a class="block-tags-link" href="#">Art</a></li>
+            <li><a class="block-tags-link" href="#">Interior</a></li>
+            <li><a class="block-tags-link" href="#">Travel</a></li>
+            <li><a class="block-tags-link" href="#">Food</a></li>
+            <li><a class="block-tags-link" href="#">Health</a></li>
+          </ul>
+        </section>
+      </section>
 
-      <div class="block">
-        <h2 class="block-title">Темы</h2>
-        <ul class="block-categories-list">
-          <li><a class="block-categories-link" href="#">Красота</a><span class="block-categories-count">12</span></li>
-          <li><a class="block-categories-link" href="#">Здоровье</a><span class="block-categories-count">4</span></li>
-          <li><a class="block-categories-link" href="#">Образ жизни</a><span class="block-categories-count">145</span></li>
-          <li><a class="block-categories-link" href="#">Музыка</a><span class="block-categories-count">28</span></li>
-          <li><a class="block-categories-link" href="#">Спорт</a><span class="block-categories-count">62</span></li>
-          <li><a class="block-categories-link" href="#">Йога</a><span class="block-categories-count">8</span></li>
-        </ul>
-      </div>
+      <section class="side-bar-topics">
+        <section class="block">
+          <h2 class="block-title">Темы</h2>
+          <ul class="block-categories-list">
+            <li><a class="block-categories-link" href="#">Красота</a><span class="block-categories-count">12</span></li>
+            <li><a class="block-categories-link" href="#">Здоровье</a><span class="block-categories-count">4</span></li>
+            <li><a class="block-categories-link" href="#">Образ жизни</a><span class="block-categories-count">145</span></li>
+            <li><a class="block-categories-link" href="#">Музыка</a><span class="block-categories-count">28</span></li>
+            <li><a class="block-categories-link" href="#">Спорт</a><span class="block-categories-count">62</span></li>
+            <li><a class="block-categories-link" href="#">Йога</a><span class="block-categories-count">8</span></li>
+          </ul>
+        </section>
+      </section>
 
     </aside>
 
