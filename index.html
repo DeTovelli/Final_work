@@ -15,8 +15,12 @@
   <header class="header">
     <div class="wrapper">
       <div class="header-topline">
-        <a class="logo-link" href="/"><img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="Noemi logo"></a>
+        <a class="logo-link" href="/"><img src="./svg/noemi-logo.svg" alt="Noemi logo" width="180"/></a>
+      
         <nav class="main-nav">
+          <button class="menu-checkbox checkbox-hidden">
+            <span class="menu-mobile">Открыть меню</span>
+          </button>
           <ul class="main-nav-list">
             <li><a class="main-link" href="#">Главная</a></li>
             <li><a class="main-link" href="#">Посты</a></li>
@@ -31,11 +35,62 @@
     </div>
   </header>
 
+  <div class="content">
+    <h2 class="trends__title">Сейчас в тренде</h2>
+    <aside class="trends__wrapper">
+      <article class="trend__card img__first">
+          <div class="trend__body">
+            <ul class="tegs__trends">
+              <li class="tegs__list-item">
+                <a class="teg__link" href="#0">Lifestyle</a></li>
+              <li class="tegs__list-item">
+                <a class="teg__link" href="#0">Interior</a></li>
+            </ul>
+            <h2 class="card__title">Сейчас в тренде: сад на подоконнике</h2>
+          </div>
+        </article>
+      
+      <article class="trend__card img__second">
+          <div class="trend__body">
+            <ul class="tegs__trends">
+              <li class="tegs__list-item">
+                <a class="teg__link" href="#0">Food</a></li>
+            </ul>
+            <h2 class="card__title">Cыры на красивых картинках из интернета: какие они на вкус?</h2>
+          </div>
+        </article>
+        
+      <article class="trend__card img__third">
+          <div class="trend__body">
+            <ul class="tegs__trends">
+              <li class="tegs__list-item">
+                <a class="teg__link" href="#0">Lifestyle</a></li>
+              <li class="tegs__list-item">
+                <a class="teg__link" href="#0">Travel</a></li>
+            </ul>
+            <h2 class="card__title">Собираемся в первый поход в горы</h2>
+          </div>
+        </article>
+        
+      <article class="trend__card img__fourth">
+          <div class="trend__body">
+            <ul class="tegs__trends">
+              <li class="tegs__list-item">
+                <a class="teg__link" href="#0">Food</a></li>
+              <li class="tegs__list-item">
+                <a class="teg__link" href="#0">Health</a></li>
+            </ul>
+            <h2 class="card__title">Сейчас в тренде: сколько витамина c в лимонах?</h2>
+          </div>
+        </article>
+      
+    </aside>
+
   <div class="columns">
     <main class="column-post-list">
       <!--1-->
       <article class="blogpost">
-        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Man at the beach">
+        <img class="blogpost-image" src="./images/last-post1.jpg" alt="Man at the beach">
         <div class="blogpost-content">
           <ul class="blogpost-categories">
             <li><a href="#">travel</a></li>
@@ -54,7 +109,7 @@
 
       <!--2-->
       <article class="blogpost">
-        <img class="blogpost-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="A girl making yoga">
+        <img class="blogpost-image" src="./images/last-post2.jpg" alt="A girl making yoga">
 
         <div class="blogpost-content">
           <ul class="blogpost-categories">
@@ -295,4 +350,46 @@
 
     <p class="copyright">Copyright © 2009–2019 City Blog LLC.</p>
   </footer>
+
+  <div class="popup popup__hidden">
+    <div class="popup__box">
+      <button class="popup__close" type="button">
+        <span class="button__close-text">Закрыть окно</span>
+      </button>
+      <h3 class="popup__title">Ваш фидбек</h3>
+      <form class="popup__form">
+        <div class="form__row">
+          <label class="form__label">
+            <span class="form__question">Как часто Вы заходите на сайт?</span>
+            <select class="option" name="theme" required>
+              <option>Почти каждый день</option>
+              <option>Варианты: Каждый день...</option>
+            </select>  
+          </label>  
+      </div>
+        <div class="form__row"> 
+          <span class="form__question">Вы подписаны на рассылку?</span>
+          <label class="radio__group">
+            <input type="radio" class="radio" name="radio__group">
+            <span class="radio__group-option">Да</span>
+          </label>
+          <label class="radio__group">
+            <input type="radio" class="radio" name="radio__group">
+            <span class="radio__group-option">Нет</span>
+          </label>
+       </div>
+        <div class="form__row">
+          <label class="form__label">
+            <span class="form__question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="field__textarea" placeholder="Может, больше рецептов?" name="msg"></textarea>
+          </label>
+        </div>
+        <div class="form-row">
+          <button class="button__popup" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>  
+  </div>    
+  
+  
 </body>
